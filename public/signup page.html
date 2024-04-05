@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <form onsubmit="return validateForm()">
+    <div class="box-form">
+      <div class="left">
+        <div class="overlay">
+          <h2>SKILLZEE</h2>
+          <h1>
+            <div class="sentence-container">
+              <span id="changing-sentence">Innovate. Educate. Succeed.</span>
+            </div>
+            <script src="signup.js"></script>
+          </h1>
+        </div>
+      </div>
+      <div class="right">
+        <h5 style="padding-right: 100px;">SignUp</h5>
+        <div class="inputs">
+          <input type="email" name="email" id="email" placeholder="E-mail"><br>
+          <input type="text" name="username" id="username" placeholder="User name">
+          <br>
+          <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <br><br>
+        <div class="forget-password">		
+          <p><a style="text-decoration: none;color: rgb(0, 7, 7);" href="">Forget password?</a></p>
+        </div>	
+        <br>
+        <button type="submit" class="button">Sign Up</button>
+      </div>
+    </div>
+  </form>
+
+  <script>
+    function validateForm() {
+      var email = document.getElementById("email").value;
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      
+      var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+      if (!passwordRegex.test(password)) {
+        alert("Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>

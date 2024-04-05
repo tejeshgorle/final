@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <form id="loginForm" action="/login" method="POST"> <!-- Form tag added -->
+    <div class="box-form">
+      <div class="left">
+        <div class="overlay">
+          <h2>SKILLZEE</h2>
+          <h1>
+            <div class="sentence-container">
+              <span id="changing-sentence">Innovate. Educate. Succeed.</span>
+            </div>
+            <script src="login.js"></script>
+          </h1>
+        </div>
+      </div>
+      <div class="right">
+        <h5>Login</h5>
+        <p>Don't have an account? <a href="#">Create Your Account</a> it takes less than a minute</p>
+        <div class="inputs">
+          <input type="text" id="username" name="username" placeholder="User name"> <!-- Added name attribute -->
+          <br>
+          <input type="email" id="email" name="email" placeholder="Email"> <!-- Added name attribute -->
+          <br>
+          <input type="password" id="password" name="password" placeholder="Password"> <!-- Added name attribute -->
+        </div>
+        <br><br>
+        <div class="forget-password">		
+          <p><a style="text-decoration: none;color: rgb(0, 7, 7);" href="">Forget password?</a></p>
+        </div>	
+        <br>
+        <button type="submit" class="button">Login</button> <!-- Changed button text to Login and type to submit -->
+      </div>
+    </div>
+  </form> <!-- Form tag closed -->
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      var emailInput = document.getElementById('email');
+      var email = emailInput.value.trim();
+
+      // Regular expression for validating email
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        event.preventDefault(); // Prevent form submission
+        emailInput.focus(); // Focus on the email input field
+        return false;
+      }
+    });
+  </script>
+</body>
+</html>

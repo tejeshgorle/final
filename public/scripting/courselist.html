@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Courses</title>
+  <style>
+body {
+  font-family: 'Montserrat', sans-serif;;
+  background-color: #5fd0ed;
+  margin: 0;
+  padding: 20px;
+}
+
+.course-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+}
+
+.course {
+  border: 2px solid #06AA;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #9be6dd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px); 
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.course:hover {
+  transform: translateY(-5px);
+  opacity: 0.9;
+}
+
+.course-title {
+  font-weight: bold;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 50px;
+}
+
+.subcourses {
+  padding-left: 20px;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.subcourse {
+  margin-bottom: 20px;
+  
+}
+
+.sub-subcourses {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.sub-subcourses li {
+  margin-bottom: 10px;
+}
+
+.subcourse li {
+  margin-bottom: 10px;
+}
+
+.subcourse li::before {
+  content: "➤";
+  margin-right: 10px;
+  color: #06AA;
+}
+
+.subcourse li:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.subcourse li:hover::before {
+  color: #057;
+}
+
+.subcourse li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #06AA;
+  transition: width 0.3s ease;
+}
+
+.subcourse li:hover::after {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cc {
+  padding-bottom: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="course-title" >Course List</div>
+  <div class="course-list">
+    <div class="course">
+      <ul class="subcourses">
+        <li class="subcourse"><span class="cc">WEB DEVELOPMENT</span>
+          <ul class="sub-subcourses">
+            <li><a href="Html.html" target="_blank">Html</a></li>
+            <li><a href="reactjs.html" target="_blank">React JS</a></li>
+            <li><a href="javascript.html" target="_blank">JavaScript</a></li>
+            <li><a href="CSS.html" target="_blank">CSS</a></li>
+            <li><a href="PHP.html" target="_blank">Php</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      <div class="course">
+      <ul class="subcourses">
+        <li class="subcourse">BUSINESS ANALYTICS AND INTELLIGENCE
+          <ul class="sub-subcourses">
+            <li><a href="excel.html" target="_blank">Excel</a></li>
+            <li><a href="SQL.html" target="_blank">SQL</a></li>
+            <li><a href="Data analysis.html" target="_blank">Data Analysis</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+<div class="course">
+      <ul class="subcourses">
+        <li class="subcourse">DATA SCIENCE	
+          <ul class="sub-subcourses">
+            <li><a href="Python.html" target="_blank">Python</a></li>
+            <li><a href="ML.html" target="_blank">ML</a></li>
+            <li><a href="Statistics.html" target="_blank">Statistics</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+<div class="course">
+      <ul class="subcourses">
+        <li class="subcourse">GRAPHIC DESIGN	
+          <ul class="sub-subcourses">
+            <li><a href="Digital design.html" target="_blank">Digital Design</a></li>
+            <li><a href="Photoshop.html" target="_blank">PhotoShop</a></li>
+            <li><a href="Adobe.html" target="_blank">Adobe Illustrator</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+<div class="course">
+      <ul class="subcourses">
+        <li class="subcourse">MUSIC	
+          <ul class="sub-subcourses">
+            <li><a href="Music production.html" target="_blank">Music Production</a></li>
+            <li><a href="MUSIC BUSINESS.html" target="_blank">Music Business</a></li>
+            <li><a href="Instrumental.html" target="_blank">Instrumental Music</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+<div class="course">
+      <ul class="subcourses">
+        <li class="subcourse">PODCAST	
+          <ul class="sub-subcourses">
+            <li><a href="Contentmarketing.html" target="_blank">Content Marketing</a></li>
+            <li><a href="Personalbranding.html"  target="_blank">Personal Branding</a></li>
+            <li><a href="Journalism.html" target="_blank">Journalism</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
