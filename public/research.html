@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Hub</title>
+    <link rel="stylesheet" href="research.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a href="#" class="logo">Research Hub</a>
+      <ul class="nav-links">
+            <li><a href="#qna">Q&A </a></li>
+            <li><a href="#papers">Published Papers</a></li>
+            <li><a href="#community">Community</a></li>
+
+      </ul>
+      <i class="uil uil-search search-icon" id="searchIcon"></i>
+      <div class="search-box">
+        <i class="uil uil-search search-icon"></i>
+        <input type="text" placeholder="Search here..." />
+      </div>
+    </nav>
+    </header>
+
+<section id="qna">
+    <h2>Q&A Section</h2>
+    <p>Users can ask questions related to research topics...</p>
+    <button id="askQuestion">Ask a Question</button>
+    <div id="questionForm" style="display: none;">
+        <label for="question">Your Question:</label><br>
+        <input type="text" id="questionInput"><br>
+        <button id="submitQuestion">Submit</button>
+    </div>
+
+    <div id="questions">
+        <div class="question">
+            <h3>How does deep learning work?</h3>
+            <p>Deep learning is a subset of machine learning...</p>
+                    </div>
+        <div class="question">
+            <h3>What is the significance of CRISPR technology?</h3>
+            <p>CRISPR technology allows precise gene editing...</p>
+            
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  <section id="papers">
+    <h2>Published Papers Section</h2>
+    <p>Repository of research papers across various fields...</p>
+
+    <div id="publishedPapers">
+        <div class="paper">
+            <h3>Title of Paper 1</h3>
+            <p>John Doe</p>
+            <p>Artificial Intelligence</p>
+            <p>published on January 1, 2024</p>
+            <p>Document Link  : <a style="color: green;" href="#">Paper 1</a></p>
+        </div>
+
+        <div class="paper">
+            <h3>Title of Paper 2</h3>
+            <p>Jane Smith</p>
+            <p>Biochemistry</p>
+            <p>Published on February 15, 2024</p>
+            <p>Document Link: <a style="color: green;" href="#">Paper 2</a></p>
+        </div>
+
+    </div>
+<br>
+
+    <!-- Existing content -->
+
+    <div id="formContainer">
+        <form id="newPaperForm">
+            <!-- Form fields -->
+<h2>Add New Paper</h2>
+        <label for="paperTitle">Title:</label><br>
+        <input type="text" id="paperTitle" name="paperTitle"><br>
+
+        <label for="paperAuthor">Author:</label><br>
+        <input type="text" id="paperAuthor" name="paperAuthor"><br>
+
+        <label for="paperField">Field:</label><br>
+        <input type="text" id="paperField" name="paperField"><br>
+
+        <label for="paperDate">Date Published:</label><br>
+        <input type="text" id="paperDate" name="paperDate"><br>
+
+        <label for="paperLink">Document Link:</label><br>
+        <input type="text" id="paperLink" name="paperLink"><br>
+
+        <button type="button" onclick="addPaper()">Add Paper</button>
+    </form>
+      </div>
+</section>
+      
+<h2 style="padding-left: 50px;">Community Section</h2>
+    <section id="community">
+ 
+    
+<div id="cards">
+<div class="card">
+  <img src="shr.jpg">
+                    <h3>SHRADDHA</h3>
+                    <p>Data Science</p>
+                    <p>Assistant Professor</p>
+                          
+   <p><button><a href=".\scripting\ML.html">View their courses</a></button></p>
+</div>
+<div class="card">
+  <img src="adam .jpg" style="height: auto;width: 180px;">
+                    <h3>ADAM IVY</h3>
+                    <p>Music Business</p>
+                    <p>Professor</p>
+                          
+   <p><button><a href=".\scripting\MUSIC BUSINESS.HTML">View their courses</a></button></p>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+    <script src="research.js"></script>
+</body>
+</html>

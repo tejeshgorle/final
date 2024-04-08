@@ -1,0 +1,309 @@
+#cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    flex: 0 0 calc(33.33% - 20px); 
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .card p {
+    margin: 5px 0;
+  }
+  
+  .card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .card button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* General styling */
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f0faff; /* Light blue */
+      margin: 0;
+      padding: 0;
+  }
+  
+  h2 {
+      color: #007bff; /* Blue */
+  }
+  
+  p {
+      color: #333; /* Dark grey */
+  }
+  
+  /* Header and navigation */
+  header {
+      background-color: #007bff; /* Blue */
+      color: white;
+      padding: 10px 0;
+  }
+  
+  .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+  }
+  
+  .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+  }
+  
+  .nav-links {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+  }
+  
+  .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+      color: #cceeff; /* Lighter Blue */
+  }
+  
+  p {
+      font-size: 16px; /* Adjust font size as needed */
+      line-height: 1.6; /* Adjust line height as needed */
+      color: #333333; /* Text color */
+      margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+  
+  
+  /* Styling for text boxes */
+  input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc; /* Light grey border */
+      border-radius: 5px;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+      border-color: #007bff; /* Blue border on focus */
+      outline: none;
+  }
+  
+  /* Styling for buttons */
+  button {
+      padding: 10px 20px;
+      background-color: #007bff; /* Blue background color */
+      color: #fff; /* White text color */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  button:hover {
+      background-color: #0056b3; /* Darker blue background color on hover */
+  }
+  
+  
+  /* Q&A Section */
+  #qna {
+      padding: 50px;
+  }
+  
+  #askQuestion {
+      background-color: #007bff; /* Blue */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: background-color 0.3s;
+  }
+  
+  #askQuestion:hover {
+      background-color: #0056b3; /* Darker Blue */
+  }
+  
+  #questionForm {
+      display: none;
+      margin-bottom: 20px;
+  }
+  
+  #questionForm label,
+  #questionForm input,
+  #questionForm button {
+      display: block;
+      margin-bottom: 10px;
+  }
+  
+  #questions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+  
+  .question {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(33.33% - 20px);
+      transition: transform 0.3s;
+  }
+  
+  .question:hover {
+      transform: translateY(-5px);
+  }
+  
+  .question h3 {
+      color: #007bff; /* Blue */
+      margin-top: 0;
+  }
+  
+  .question p {
+      color: #333; /* Dark grey */
+      margin-bottom: 10px;
+  }
+  
+  /* Published Papers Section */
+  #papers {
+      padding: 50px;
+  }
+  
+  .paper {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(33.33% - 20px);
+      transition: transform 0.3s;
+  }
+  
+  .paper:hover {
+      transform: translateY(-5px);
+  }
+  
+  .paper h3 {
+      color: #007bff; /* Blue */
+      margin-top: 0;
+  }
+  
+  .paper p {
+      color: #333; /* Dark grey */
+      margin-bottom: 10px;
+  }
+   
+  
+  #cards, #publishedPapers {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Adjust the value as needed */
+  }
+  /* Form container styling */
+  #formContainer {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(33.33% - 20px);
+      transition: transform 0.3s;
+      background-image: url('res.jpg'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  
+  /* Hover effect */
+  
+  #formContainer h3 {
+      color: #007bff; /* Blue */
+      margin-top: 0;
+  }
+  
+  #formContainer p {
+      color: #333; /* Dark grey */
+      margin-bottom: 10px;
+  }
+  
+  #formContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Adjust as needed */
+  }
+  
+  /* Form styling */
+  #newPaperForm {
+      background-color: #f0f8ff; /* Light blue */
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px; /* Adjust as needed */
+  }
+  
+  /* Form label styling */
+  #newPaperForm label {
+      font-weight: bold;
+      color: #00008b; /* Dark blue */
+  }
+  
+  /* Form input styling */
+  #newPaperForm input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #00008b; /* Dark blue */
+      border-radius: 5px;
+      box-sizing: border-box;
+  }
+  
+  /* Button styling */
+  #newPaperForm button {
+      background-color: #00008b; /* Dark blue */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  /* Button hover effect */
+  #newPaperForm button:hover {
+      background-color: #4682b4; /* Steel blue */
+  }
